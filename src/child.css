@@ -172,6 +172,15 @@ header p {
   width: 95%;
 }
 
+.content .list-papers {
+  flex-direction: column;
+}
+
+#div_diffusion_papers_list {
+  margin-top: 20px;
+}
+
+
 .gray_background {
   background-color: rgb(236, 236, 236);
   padding-left: 5px;

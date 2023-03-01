@@ -124,14 +124,6 @@ i:hover {
   margin-bottom: 0px;
 }
 
-.post-image img {
-  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  margin-bottom: 16px;
-  margin-top: 4px;
-}
-
 .single-log {
   margin-bottom: 20px;
 }

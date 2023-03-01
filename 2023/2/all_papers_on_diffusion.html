@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>All arxiv papers on diffusion models!</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" type="text/css" href="./../../src/child.css" />
+  <script src="./../../src/main.js"></script>
+  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md">
+    <div class="container">
+      <a class="navbar-brand" href="./../../index.html">✍🏾 Sehwag's blog</a>
+      <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./../../../index.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container">
+    <h1>
+      All Arxiv Papers on Diffusion Models
+    </h1>
+    <p>28 Feb 2023</p>
+  </header>
+
+  <div class="container content">
+    <p>
+      Similar to large-language models in NLP, diffusion models have transformed generative modelling in computer vision and other multi-modal domains. The increasing interest in diffusion models is largely due to their simplicity and effectiveness. Anyone can train these models within a few lines of <a href="https://github.com/VSehwag/minimal-diffusion">code</a>, and their image quality and diversity are extremely good.  
+    </p>
+
+    <p>
+      In this post, I list all papers on diffusion models that I could find on arxiv (using <a
+        href="https://github.com/mahdisadjadi/arxivscraper" target="_blank">arxivscraper</a>). I hope this list will be
+      helpful in tracking exploding number of papers in this area. I intend to keep it updated (and further
+      reduce false positives). If you find any paper missing, please let me know.
+    </p>
+
+    <div class="caption-left w_100">
+      <div class="gallery">
+        <div class="figure" style="width: 45%">
+          <img src="diffusion_paper_count.jpeg" style="width: 100%" />
+        </div>
+        <div class="figure" style="width: 50%">
+          <p>
+            <b>Cumulative number of papers on diffusion models over years.</b> We include papers on both denoising-diffusion and score-based generative models. No doubt that the interest in this area is exploding in the academic community.
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <div id="div_diffusion_papers_list"></div>
+  </div>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function(){
+        jQuery("#div_diffusion_papers_list").load("./diffusion_papers_list.html");
+    });
+  </script>
+</body>
+
+</html>
